@@ -1,4 +1,7 @@
 {
+  "skillOverrides": {
+    "create-pr": "on"
+  },
   "permissions": {
     "allow": [
       "Read", "Glob", "Grep", "LS",
@@ -14,6 +17,11 @@
       "Bash(git commit *)",
       "Bash(git checkout *)",
       "Bash(git branch *)",
+      "Bash(git rev-parse *)",
+      "Bash(git push -u origin *)",
+      "Bash(gh pr create *)",
+      "Bash(gh pr view *)",
+      "Bash(gh repo view *)",
       "Write(src/**)",
       "Edit", "MultiEdit"
     ],
@@ -25,7 +33,10 @@
       "Write(.github/workflows/*)",
       "Bash(rm -rf *)",
       "Bash(sudo *)",
-      "Bash(git push *)",
+      "Bash(git push * main*)",
+      "Bash(git push * master*)",
+      "Bash(git push --force *)",
+      "Bash(git push -f *)",
       "Bash(git merge *)",
       "Bash(npm publish *)",
       "Bash(docker *)",
